@@ -10,9 +10,17 @@ public class Console {
         while(isWork){
             String command=scn.nextLine();
             switch(command){
-                case "/help":
+
+                    case "/enc":
+                    new Encrypt();
+
+                    case "/dec":
+                    new Decrypt();
+
+                    case "/help":
                     new Help();
-                case "/exit":
+
+                    case "/exit":
                     isWork=false;
             }
         }
