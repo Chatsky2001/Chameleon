@@ -5,6 +5,7 @@ public class Help {
       out.println("/help-вывод списка команд");
       out.println("/enc-запускает шифровальщик");
       out.println("/dec-запускает дешифровщик");
+        out.println("/info-информация о разработчиках");
       out.println("/exit - выход из консоли");
     }
 }
