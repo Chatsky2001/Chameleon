@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 import static java.lang.System.out;
@@ -10,10 +12,18 @@ public class Encrypt {
             out.println(user+">");
             String commandDec=scn.nextLine();
             switch (commandDec){
-                case "/stop":
-                    isStart=false;
-                    out.println("Закрытие шифровальной машины");
+                case "/exit":
+                    new Exit();
                     break;
+
+                case "/stop":
+                    out.println("Конец работы шифровальщика");
+                    isStart=false;
+                    break;
+
+
+                default:
+                    new Error(commandDec);
             }
         }
     }

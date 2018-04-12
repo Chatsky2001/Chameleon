@@ -1,5 +1,6 @@
-import static java.lang.System.out;
 
+
+import static java.lang.System.out;
 public class Help {
     Help(){
       out.println("/help-вывод списка команд");
